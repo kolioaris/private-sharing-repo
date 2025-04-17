@@ -1,0 +1,26 @@
+name: '&c&lSelector'
+size: 27
+items:
+  btn-0:
+    item:
+      material: WHITE_STAINED_GLASS_PANE
+      name: '&cEmpty Slot'
+    slots:
+      - 0-12
+      - 14-26
+  btn-13:
+    slot: 13
+    item:
+      material: GRASS_BLOCK
+      name: '&4&lSurvival'
+      lore:
+        - 'Click to teleport to &6Survival'
+    actions:
+      -
+        type: message
+        messages:
+          - '&6Teleporting...'
+      -
+        type: 'console command'
+        commands:
+          - 'mvtp world %player%'
